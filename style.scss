@@ -120,7 +120,6 @@ body {
 }
 .cards__new{
     position: absolute;
-    
     height: 29px;
     width: 80px;
     margin: 15px 15px;
@@ -136,18 +135,19 @@ body {
 }
 footer {
     color: white;
-    display: grid;
-    grid-template-columns: 20rem;
-    grid-template-rows: auto auto;
     background-color: #353535;
     padding: 23px 1.56rem;
     justify-content: center;
+    display: flex;
 }
 .footer__list{
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    height: 114px;
+}
+footer a{
+    padding: 10px;
 }
 .footer__title{
     font-family: "Shrikhand", serif;
