@@ -132,6 +132,23 @@ body {
     align-items: center;
 }
 .restaurant{
-    background-color: #99e2d034;
-    
+    background-color: #99e2d034;   
+}
+footer {
+    color: white;
+    display: grid;
+    grid-template-columns: 20rem;
+    grid-template-rows: auto auto;
+    background-color: #353535;
+    padding: 23px 1.56rem;
+    justify-content: center;
+}
+.footer__list{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.footer__title{
+    font-family: "Shrikhand", serif;
 }
