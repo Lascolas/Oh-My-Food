@@ -1,0 +1,15 @@
+
+@mixin footer{
+    display: grid;
+    grid-template-columns: 20rem;
+    grid-template-rows: auto auto;
+    background-color: #353535;
+    padding: 23px 1.56rem;
+    justify-content: center;
+    color: white;
+}
+@mixin center {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

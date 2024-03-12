@@ -1,0 +1,54 @@
+ @import "_header.scss";
+ @import "_main.scss";
+   @import "_mixins.scss";
+
+ body{
+    font-family:  "Roboto" ,sans-serif ;
+    margin: 0px;
+ }
+ a{
+    text-decoration: none;
+    color: black;
+ }
+
+ footer{
+    @include footer;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    height: 54px;
+    padding: 30px 25px;
+    
+    
+    h3 { 
+      font-family: "Shrikhand" , sans-serif;
+      margin: 0px 0px 0px 20px;
+      align-self: center;
+        
+       
+    }
+  .footer__list {
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   margin: 16px 0px 0px 0px;
+   list-style-type: none;  
+
+ li a {
+    color: white;
+    padding-left: 15px;
+}
+ }
+ .mention {
+   display: flex;
+   flex-direction: row-reverse;
+   justify-content: space-between;
+   
+ }
+}
+
+  
+  
+
+ 
+  
+  
