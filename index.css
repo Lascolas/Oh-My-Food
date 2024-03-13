@@ -103,6 +103,10 @@ header {
   transform: translate(-13px, 0px);
 }
 
+.choix i:hover {
+  color: #9356DC;
+}
+
 .restaurant {
   height: 608px;
   padding-left: 50px;
@@ -170,7 +174,7 @@ header {
   background-color: rgba(153, 226, 208, 0.2039215686);
 }
 
-.restaurant i {
+.fa-heart {
   display: flex;
   justify-content: end;
   position: absolute;
@@ -178,13 +182,13 @@ header {
   top: 80%;
   font-size: 30px;
 }
-.restaurant i:hover {
+.fa-heart:hover {
   font-weight: bold;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-image: linear-gradient(to top, #9356DC, #ff79da);
 }
-.restaurant i:active {
+.fa-heart:active {
   font-weight: bold;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;

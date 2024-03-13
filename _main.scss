@@ -77,6 +77,9 @@
     border-radius: 50%;
     transform:translate(-13px , 0px) ;    
 }
+.choix i:hover {
+  color:#9356DC ;
+}
 .restaurant{
 height: 608px;
 padding-left: 50px;
@@ -135,7 +138,7 @@ transform: translate(28vw , 0%);
 .restaurant{
 background-color: #99e2d034;   
 }
-.restaurant i {
+.fa-heart {
   display: flex;
   justify-content: end;
   position: absolute;
