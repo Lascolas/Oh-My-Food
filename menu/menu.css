@@ -3,6 +3,25 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+header {
+  display: grid;
+  grid-template-columns: 2fr 2.5fr;
+  height: 96px;
+  align-items: center;
+}
+
+.logo {
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 10vw;
+}
+
+.return__arrow {
+  color: black;
+}
+
 .photo__menu1 {
   background-image: url(/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
   background-size: cover;
@@ -29,12 +48,20 @@ body {
   margin-top: -25px;
   justify-content: center;
   align-items: center;
+  text-align: center;
+}
+
+.menu {
+  width: 60%;
+  max-width: 634px;
+  margin: auto;
 }
 
 .menu__title {
   font-family: "Shrikhand", serif;
   font-weight: 200;
   font-size: 28px;
+  max-width: 634px;
 }
 
 h2 {
@@ -48,7 +75,7 @@ h2 {
   width: 40px;
 }
 
-.plateandprice1 {
+.plateandprice1, .plateandprice3, .plateandprice2 {
   display: flex;
   flex-direction: row;
   height: 69px;
@@ -61,36 +88,41 @@ h2 {
   overflow: hidden;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
   width: 44vw;
+  animation: wave ease-in-out 1.5;
+  animation: wave ease-in-out 1.5s;
+}
+@keyframes wave {
+  0% {
+    transform: translateX(-40%);
+  }
+  20% {
+    transform: translateX(10%);
+  }
+  40% {
+    transform: translateX(-10%);
+  }
+  60% {
+    transform: translateX(5%);
+  }
+  80% {
+    transform: translateX(-2%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
 }
 
 .plateandprice2 {
-  display: flex;
-  flex-direction: row;
-  height: 69px;
-  padding: 0px;
-  margin: auto;
-  margin-top: 12px;
-  align-items: center;
-  background-color: white;
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
-  width: 44vw;
+  animation: wave ease-in-out 1.5S 0.2s;
 }
 
-.plateandprice3 {
+.plate {
   display: flex;
-  flex-direction: row;
-  height: 69px;
-  padding: 0px;
-  margin: auto;
-  margin-top: 12px;
-  align-items: center;
-  background-color: white;
-  border-radius: 15px;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 15px;
   overflow: hidden;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
-  width: 44vw;
+  white-space: nowrap;
 }
 
 .platetitle {
@@ -106,7 +138,7 @@ h2 {
 }
 
 .plate__option {
-  width: 150px;
+  width: 152px;
   height: 100%;
   display: flex;
   flex-direction: row;
@@ -114,19 +146,39 @@ h2 {
   background-color: #99e2d0;
   border-radius: 0px 15px 15px 0px;
   position: relative;
+  right: -65px;
+  transition-duration: 0.5s;
+}
+
+.fa-heart {
+  font-size: 25px;
+}
+.fa-heart:hover {
+  font-weight: bold;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to top, #9356DC, #ff79da);
+}
+.fa-heart:active {
+  font-weight: bold;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to top, #9356DC, #ff79da);
 }
 
 .plate__price {
   background-color: white;
-  align-items: center;
-  padding: 20px 10px 10px;
-  width: 55px;
+  font-size: 0.94rem;
+  padding-top: 40px;
+  padding-left: 5px;
+  width: 58px;
   height: 69px;
+  margin: 0px;
 }
 
 .plate__check {
   background-color: white;
-  border-radius: 50%;
+  border-radius: 50% 50% 50% 50%/50% 50% 50% 50%;
   width: 20px;
   height: 20px;
   display: flex;
@@ -135,4 +187,63 @@ h2 {
   position: absolute;
   top: 24px;
   left: 70%;
+}
+
+.plateandprice1:hover .plate__option, .plateandprice2:hover .plate__option, .plateandprice3:hover .plate__option {
+  transition-duration: 0.5s;
+  right: 0px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 218px;
+  height: 50px;
+  border-radius: 25px;
+  text-decoration: none;
+  margin: auto;
+  margin-top: 60px;
+  background: linear-gradient(to top, #9356dc, #ff79da);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.button__text {
+  color: white;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 20rem;
+  grid-template-rows: auto auto;
+  background-color: #353535;
+  padding: 23px 1.56rem;
+  justify-content: center;
+  color: white;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  height: 54px;
+  padding: 30px 25px;
+}
+footer h3 {
+  font-family: "Shrikhand", sans-serif;
+  margin: 0px 0px 0px 20px;
+  align-self: center;
+}
+footer .footer__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 16px 0px 0px 0px;
+  list-style-type: none;
+}
+footer .footer__list li a {
+  color: white;
+  padding-left: 15px;
+}
+footer .mention {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
 }/*# sourceMappingURL=menu.css.map */

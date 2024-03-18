@@ -174,7 +174,7 @@ header {
   background-color: rgba(153, 226, 208, 0.2039215686);
 }
 
-.fa-heart {
+.restaurant i {
   display: flex;
   justify-content: end;
   position: absolute;
@@ -182,13 +182,13 @@ header {
   top: 80%;
   font-size: 30px;
 }
-.fa-heart:hover {
+.restaurant i:hover {
   font-weight: bold;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-image: linear-gradient(to top, #9356DC, #ff79da);
 }
-.fa-heart:active {
+.restaurant i:active {
   font-weight: bold;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
