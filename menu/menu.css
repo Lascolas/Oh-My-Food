@@ -1,3 +1,73 @@
+@media screen and (max-width: 725px) {
+  body {
+    margin: 0px;
+  }
+  .plateandprice1, .plateandprice3, .plateandprice2 {
+    max-width: 345px;
+  }
+  .platetitle .platetxt {
+    text-overflow: ellipsis;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    min-height: 186px;
+    color: black;
+  }
+  footer .mention {
+    flex-direction: column;
+  }
+  footer .footer__list {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 890px) {
+  .loader {
+    display: none;
+  }
+  .function__choise {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .restaurant {
+    height: 1058px;
+    margin: 0;
+    padding: 2px;
+  }
+  .restaurant__cards {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    gap: 18px;
+  }
+  .restaurant__cards li {
+    width: 90.2vw;
+  }
+  .cards {
+    width: 100%;
+  }
+  .cards img {
+    width: 90.5vw;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    min-height: 186px;
+    color: black;
+  }
+  footer .mention {
+    flex-direction: column;
+  }
+  footer .footer__list {
+    display: flex;
+    flex-direction: column;
+  }
+}
 body {
   display: block;
   font-family: "Roboto", sans-serif;
@@ -15,7 +85,7 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 10vw;
+  width: 200px;
 }
 
 .return__arrow {
@@ -31,10 +101,47 @@ header {
   height: 383px;
 }
 
+.photo__menu2 {
+  background-image: url(/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center;
+  height: 383px;
+}
+
+.photo__menu3 {
+  background-image: url(/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center;
+  height: 383px;
+}
+
+.photo__menu4 {
+  background-image: url(/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center;
+  height: 383px;
+}
+
+p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+h3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .main__menu {
   background-color: #f6f6f6;
   border-radius: 40px 40px 0px 0px;
-  width: 73.5vw;
+  max-width: 1055px;
   height: 1221px;
   margin: auto;
   padding-bottom: 40px;
@@ -52,7 +159,6 @@ header {
 }
 
 .menu {
-  width: 60%;
   max-width: 634px;
   margin: auto;
 }
@@ -87,9 +193,10 @@ h2 {
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
-  width: 44vw;
+  max-width: 634px;
   animation: wave ease-in-out 1.5;
   animation: wave ease-in-out 1.5s;
+  text-overflow: ellipsis;
 }
 @keyframes wave {
   0% {
@@ -123,6 +230,7 @@ h2 {
   margin-left: 15px;
   overflow: hidden;
   white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .platetitle {
@@ -130,11 +238,13 @@ h2 {
   font-size: 18px;
   font-weight: 500;
   width: 39vw;
+  text-overflow: ellipsis;
 }
 
 .platetxt {
   margin: 0px 15px;
   font-weight: 100px;
+  text-overflow: ellipsis;
 }
 
 .plate__option {
@@ -215,10 +325,9 @@ h2 {
 
 footer {
   display: grid;
-  grid-template-columns: 20rem;
   grid-template-rows: auto auto;
   background-color: #353535;
-  padding: 23px 1.56rem;
+  padding: 23px;
   justify-content: center;
   color: white;
   display: flex;

@@ -1,18 +1,19 @@
  @import "_mixins.scss";
- 
- 
+ @import "_responsive.scss";
+
+
+
  .location{
   display:flex ;
   flex-direction: row;
   @include center;
   background-color: #eaeaea;
   font-weight: 500;
-  
 }
 
 .explore{
   text-align: center;
-  background-color: F6F6F6;
+  background-color: #F6F6F6;
   height: 240px;
 }
 .explore__title{
@@ -64,9 +65,9 @@
   border-radius: 20px;
   width: 322px;
   @include center;
-  height: 72px;
-  
+  height: 72px;  
 }
+
 .choix__number {
   display: flex;
     @include center;
@@ -77,19 +78,21 @@
     border-radius: 50%;
     transform:translate(-13px , 0px) ;    
 }
-.choix i:hover {
+.choix:hover :not(.choix__text , .choix__number) {
   color:#9356DC ;
 }
 .restaurant{
 height: 608px;
 padding-left: 50px;
 
+
 }
 .restaurant__cards{
   display:grid;
-  grid-template-columns: 1fr 1.5fr;
+  grid-template-columns: 1fr 2fr;
   gap: 55px;
   max-width: 35.5vw;
+  margin-left: 25px;
    
 }
 .cards{

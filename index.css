@@ -13,6 +13,76 @@ header {
   padding: 0px 19px;
 }
 
+@media screen and (max-width: 725px) {
+  body {
+    margin: 0px;
+  }
+  .plateandprice1, .plateandprice2, .plateandprice3 {
+    max-width: 345px;
+  }
+  .platetitle .platetxt {
+    text-overflow: ellipsis;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    min-height: 186px;
+    color: black;
+  }
+  footer .mention {
+    flex-direction: column;
+  }
+  footer .footer__list {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 890px) {
+  .loader {
+    display: none;
+  }
+  .function__choise {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .restaurant {
+    height: 1058px;
+    margin: 0;
+    padding: 2px;
+  }
+  .restaurant__cards {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    gap: 18px;
+  }
+  .restaurant__cards li {
+    width: 90.2vw;
+  }
+  .cards {
+    width: 100%;
+  }
+  .cards img {
+    width: 90.5vw;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    min-height: 186px;
+    color: black;
+  }
+  footer .mention {
+    flex-direction: column;
+  }
+  footer .footer__list {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .location {
   display: flex;
   flex-direction: row;
@@ -25,7 +95,7 @@ header {
 
 .explore {
   text-align: center;
-  background-color: F6F6F6;
+  background-color: #F6F6F6;
   height: 240px;
 }
 
@@ -103,7 +173,7 @@ header {
   transform: translate(-13px, 0px);
 }
 
-.choix i:hover {
+.choix:hover :not(.choix__text, .choix__number) {
   color: #9356DC;
 }
 
@@ -114,9 +184,10 @@ header {
 
 .restaurant__cards {
   display: grid;
-  grid-template-columns: 1fr 1.5fr;
+  grid-template-columns: 1fr 2fr;
   gap: 55px;
   max-width: 35.5vw;
+  margin-left: 25px;
 }
 
 .cards {
@@ -195,6 +266,157 @@ header {
   background-image: linear-gradient(to top, #9356DC, #ff79da);
 }
 
+.loader {
+  font-family: "Shrikhand", sans-serif;
+  z-index: 1;
+  display: flex;
+  position: absolute;
+  height: 150%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  animation: loader 4s forwards;
+  background: #f6f6f6;
+}
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+.lettre {
+  color: black;
+  font-size: 80px;
+  letter-spacing: 10px;
+  margin-bottom: 500px;
+  animation: flash 1.2s linear infinite;
+}
+@keyframes flash {
+  0% {
+    color: #9356dc;
+    text-shadow: 0 0 7 #9356dc;
+  }
+  90% {
+    color: black;
+    text-shadow: 0 0 7 black;
+  }
+  100% {
+    color: #9356dc;
+    text-shadow: 0 0 7 #9356dc;
+    display: none;
+  }
+}
+
+.lettre:nth-child(1) {
+  animation-delay: 0.1S;
+}
+
+.lettre:nth-child(2) {
+  animation-delay: 0.2S;
+}
+
+.lettre:nth-child(3) {
+  animation-delay: 0.3S;
+}
+
+.lettre:nth-child(4) {
+  animation-delay: 0.4S;
+}
+
+.lettre:nth-child(5) {
+  animation-delay: 0.5S;
+}
+
+.lettre:nth-child(6) {
+  animation-delay: 0.6S;
+}
+
+.lettre:nth-child(7) {
+  animation-delay: 0.7S;
+}
+
+.lettre:nth-child(8) {
+  animation-delay: 0.8S;
+}
+
+@media screen and (max-width: 725px) {
+  body {
+    margin: 0px;
+  }
+  .plateandprice1, .plateandprice2, .plateandprice3 {
+    max-width: 345px;
+  }
+  .platetitle .platetxt {
+    text-overflow: ellipsis;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    min-height: 186px;
+    color: black;
+  }
+  footer .mention {
+    flex-direction: column;
+  }
+  footer .footer__list {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 890px) {
+  .loader {
+    display: none;
+  }
+  .function__choise {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .restaurant {
+    height: 1058px;
+    margin: 0;
+    padding: 2px;
+  }
+  .restaurant__cards {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    gap: 18px;
+  }
+  .restaurant__cards li {
+    width: 90.2vw;
+  }
+  .cards {
+    width: 100%;
+  }
+  .cards img {
+    width: 90.5vw;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    min-height: 186px;
+    color: black;
+  }
+  footer .mention {
+    flex-direction: column;
+  }
+  footer .footer__list {
+    display: flex;
+    flex-direction: column;
+  }
+}
 body {
   font-family: "Roboto", sans-serif;
   margin: 0px;
@@ -207,10 +429,9 @@ a {
 
 footer {
   display: grid;
-  grid-template-columns: 20rem;
   grid-template-rows: auto auto;
   background-color: #353535;
-  padding: 23px 1.56rem;
+  padding: 23px;
   justify-content: center;
   color: white;
   display: flex;
