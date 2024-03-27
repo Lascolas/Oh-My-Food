@@ -8,34 +8,33 @@
   .platetitle .platetxt {
     text-overflow: ellipsis;
   }
-  footer {
-    display: flex;
-    flex-direction: column;
-    min-height: 186px;
-    color: black;
-  }
-  footer .mention {
-    flex-direction: column;
-  }
-  footer .footer__list {
-    display: flex;
-    flex-direction: column;
+}
+@media (min-width: 768px) {
+  .loader {
+    display: none !important;
   }
 }
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 1100px) {
   .loader {
     display: none;
+  }
+  .explore__title {
+    font-size: 34px;
+  }
+  .function {
+    margin: 4px;
   }
   .function__choise {
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
+    justify-content: center;
   }
   .restaurant {
-    height: 1058px;
+    height: 1110px;
     margin: 0;
-    padding: 2px;
+    padding: 20px;
   }
   .restaurant__cards {
     display: flex;
@@ -54,18 +53,8 @@
   .cards img {
     width: 90.5vw;
   }
-  footer {
-    display: flex;
-    flex-direction: column;
-    min-height: 186px;
-    color: black;
-  }
-  footer .mention {
-    flex-direction: column;
-  }
-  footer .footer__list {
-    display: flex;
-    flex-direction: column;
+  .cards__new {
+    left: 70%;
   }
 }
 body {
@@ -323,36 +312,25 @@ h2 {
   color: white;
 }
 
-footer {
-  display: grid;
-  grid-template-rows: auto auto;
-  background-color: #353535;
-  padding: 23px;
-  justify-content: center;
-  color: white;
+.mention {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
   height: 54px;
   padding: 30px 25px;
 }
-footer h3 {
+.mention h3 {
   font-family: "Shrikhand", sans-serif;
   margin: 0px 0px 0px 20px;
   align-self: center;
 }
-footer .footer__list {
+.mention .footer__list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   margin: 16px 0px 0px 0px;
   list-style-type: none;
 }
-footer .footer__list li a {
+.mention .footer__list li a {
   color: white;
   padding-left: 15px;
-}
-footer .mention {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
 }/*# sourceMappingURL=menu.css.map */

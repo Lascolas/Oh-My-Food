@@ -127,19 +127,23 @@ background-color: white;
 border-radius: 15px;
 }
 .cards__new{
+  display: flex;
 position: absolute;
-height: 29px;
+left: 75%;
+height: 30px;
 width: 80px;
 margin: 15px 15px;
 background-color: #99e2d0;
 color: #008766;
 border-radius: 2px;
-display: flex;
 @include center;
-transform: translate(28vw , 0%);
+;
 }
 .restaurant{
-background-color: #99e2d034;   
+background-color: #99e2d034;
+justify-content:  center ;
+margin: auto;  
+align-items: center ; 
 }
 .restaurant i {
   display: flex;

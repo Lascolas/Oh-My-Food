@@ -1,11 +1,6 @@
 
 @mixin footer{
-    display: grid;
-    grid-template-rows: auto auto;
-    background-color: #353535;
-    padding: 23px;
-    justify-content: center;
-    color: white;
+   
 }
 @mixin center {
     justify-content: center;
@@ -57,7 +52,7 @@
     }
 }
 @mixin loader {
-    animation: loader 4s forwards;
+    animation: loader 2s forwards;
     @keyframes loader  {
         0%{
             opacity: 1;;

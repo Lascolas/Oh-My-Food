@@ -1,0 +1,55 @@
+.mention {
+    background-color: #353535;
+    padding: 25px; 
+    color: white;
+    display: flex;
+    flex-direction: row-reverse; 
+    justify-content: flex-end; 
+    height: auto;
+}
+
+h3 {
+    font-family: "Shrikhand", sans-serif;
+    margin: 0 20px 0 0; 
+    align-self: center;
+}
+
+.footer__list {
+    display: flex;
+    margin: 16px 0;
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer__list li a {
+    color: #fff;
+}
+
+@media screen and (max-width: 790px) {
+    
+    .mention {
+        display: flex;
+        flex-direction: column;
+        min-height: 140px;    
+        padding: 23px; 
+        align-items: flex-start;
+        justify-self: flex-start;
+    }
+    
+    .footer__title {
+        display:flex;
+        font-size: 20px;
+        padding: 10px;
+        position: absolute;
+        left: 6%;
+        top:2070px;
+    }
+    
+    .footer__list {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        gap: 5px;
+        margin: 10px ;
+    }
+}
