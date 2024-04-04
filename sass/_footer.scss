@@ -1,24 +1,27 @@
 .mention {
     background-color: #353535;
-    padding: 25px; 
+    padding: 25px;
+    gap: 10px; 
     color: white;
     display: flex;
     flex-direction: row-reverse; 
-    justify-content: flex-end; 
+    
     height: auto;
-}
-
 h3 {
     font-family: "Shrikhand", sans-serif;
     margin: 0 20px 0 0; 
     align-self: center;
 }
+}
+
+
 
 .footer__list {
     display: flex;
     margin: 16px 0;
     list-style-type: none;
     padding: 0;
+    gap: 10px;
 }
 
 .footer__list li a {
@@ -41,8 +44,8 @@ h3 {
         font-size: 20px;
         padding: 10px;
         position: absolute;
-        left: 6%;
-        top:2070px;
+        left: 4%;
+        
     }
     
     .footer__list {
@@ -50,6 +53,6 @@ h3 {
         flex-direction: column;
         list-style: none;
         gap: 5px;
-        margin: 10px ;
+        margin-top: 45px ;
     }
 }

@@ -37,7 +37,7 @@
 }
 .explore__button--text{
   color: white;
-  font-weight: medium;
+  font-weight: normal;
 }
 .function{
   margin: auto;
@@ -65,7 +65,8 @@
   border-radius: 20px;
   width: 322px;
   @include center;
-  height: 72px;  
+  height: 72px;
+  cursor: pointer;  
 }
 
 .choix__number {
@@ -93,6 +94,8 @@ padding-left: 50px;
   gap: 55px;
   max-width: 35.5vw;
   margin-left: 25px;
+  margin: auto;
+  justify-content: center;
    
 }
 .cards{
