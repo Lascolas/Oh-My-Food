@@ -129,6 +129,7 @@ header {
   gap: 50px;
   margin: 25px 0px 50px 0px;
   justify-content: center;
+  cursor: default;
 }
 
 .choix {
@@ -142,7 +143,7 @@ header {
   align-items: center;
   text-align: center;
   height: 72px;
-  cursor: pointer;
+  cursor: default;
 }
 
 .choix__number {
@@ -156,6 +157,7 @@ header {
   background-color: #9356dc;
   border-radius: 50%;
   transform: translate(-13px, 0px);
+  cursor: default;
 }
 
 .choix:hover :not(.choix__text, .choix__number) {
@@ -353,7 +355,7 @@ header {
     display: none;
   }
   .explore__title {
-    font-size: 35px;
+    font-size: 34px;
   }
   .function {
     margin: 4px;
