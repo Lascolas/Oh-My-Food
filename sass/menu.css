@@ -1,0 +1,368 @@
+@media screen and (max-width: 725px) {
+  body {
+    margin: 0px;
+  }
+  .plateandprice1, .plateandprice3, .plateandprice2 {
+    max-width: 345px;
+  }
+  .platetitle .platetxt {
+    text-overflow: ellipsis;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .loader {
+    display: none;
+  }
+  .explore__title {
+    font-size: 34px;
+  }
+  .function {
+    margin: 4px;
+  }
+  .function__choise {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .restaurant {
+    height: 1110px;
+    margin: 0;
+    padding: 20px;
+  }
+  .restaurant__cards {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    gap: 18px;
+  }
+  .restaurant__cards li {
+    width: 90.2vw;
+  }
+  .cards {
+    width: 100%;
+  }
+  .cards img {
+    width: 90.5vw;
+  }
+  .cards__new {
+    left: 70%;
+  }
+}
+body {
+  display: block;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 2fr 2.5fr;
+  height: 96px;
+  align-items: center;
+}
+
+.logo {
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 200px;
+}
+
+.return__arrow {
+  color: black;
+}
+
+.photo__menu1 {
+  background-image: url(/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center;
+  height: 383px;
+}
+
+.photo__menu2 {
+  background-image: url(/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center;
+  height: 383px;
+}
+
+.photo__menu3 {
+  background-image: url(/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center;
+  height: 383px;
+}
+
+.photo__menu4 {
+  background-image: url(/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center;
+  height: 383px;
+}
+
+p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+h3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.main__menu {
+  background-color: #f6f6f6;
+  border-radius: 40px 40px 0px 0px;
+  max-width: 1055px;
+  height: 1221px;
+  margin: auto;
+  padding-bottom: 40px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  padding: 30px 15px 0px 15px;
+  gap: 20px;
+  margin-top: -25px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.menu {
+  max-width: 634px;
+  margin: auto;
+}
+
+.menu__title {
+  font-family: "Shrikhand", serif;
+  font-weight: 200;
+  font-size: 28px;
+  max-width: 634px;
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: lighter;
+  margin: 40px 0px 5px 0px;
+}
+
+.lign__bottom {
+  border-bottom: 3px solid #99e2d0;
+  width: 40px;
+}
+
+.plateandprice1, .plateandprice3, .plateandprice2 {
+  display: flex;
+  flex-direction: row;
+  height: 69px;
+  padding: 0px;
+  margin: auto;
+  margin-top: 12px;
+  align-items: center;
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+  max-width: 634px;
+  animation: wave ease-in-out 1.5;
+  animation: wave ease-in-out 1.5s;
+  text-overflow: ellipsis;
+}
+@keyframes wave {
+  0% {
+    transform: translateX(-40%);
+  }
+  20% {
+    transform: translateX(10%);
+  }
+  40% {
+    transform: translateX(-10%);
+  }
+  60% {
+    transform: translateX(5%);
+  }
+  80% {
+    transform: translateX(-2%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.plateandprice2 {
+  animation: wave ease-in-out 1.5S 0.2s;
+}
+
+.plate {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 15px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.platetitle {
+  margin: 0px 15px 5px;
+  font-size: 18px;
+  font-weight: 500;
+  width: 39vw;
+  text-overflow: ellipsis;
+}
+
+.platetxt {
+  margin: 0px 15px;
+  font-weight: 100px;
+  text-overflow: ellipsis;
+}
+
+.plate__option {
+  width: 152px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+  background-color: #99e2d0;
+  border-radius: 0px 15px 15px 0px;
+  position: relative;
+  right: -65px;
+  transition-duration: 0.5s;
+}
+
+.fa-heart {
+  font-size: 25px;
+}
+.fa-heart:hover {
+  font-weight: bold;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to top, #9356DC, #ff79da);
+}
+.fa-heart:active {
+  font-weight: bold;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to top, #9356DC, #ff79da);
+}
+
+.plate__price {
+  background-color: white;
+  font-size: 0.94rem;
+  padding-top: 40px;
+  padding-left: 5px;
+  width: 58px;
+  height: 69px;
+  margin: 0px;
+}
+
+.plate__check {
+  background-color: white;
+  border-radius: 50% 50% 50% 50%/50% 50% 50% 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 24px;
+  left: 70%;
+}
+
+.plateandprice1:hover .plate__option, .plateandprice2:hover .plate__option, .plateandprice3:hover .plate__option {
+  transition-duration: 0.5s;
+  right: 0px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 218px;
+  height: 50px;
+  border-radius: 25px;
+  text-decoration: none;
+  margin: auto;
+  margin-top: 60px;
+  background: linear-gradient(to top, #9356dc, #ff79da);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.button__text {
+  color: white;
+}
+
+.mention {
+  background-color: #353535;
+  padding: 25px;
+  gap: 10px;
+  color: white;
+  display: flex;
+  flex-direction: row-reverse;
+  height: auto;
+}
+.mention h3 {
+  font-family: "Shrikhand", sans-serif;
+  margin: 0 20px 0 0;
+  align-self: center;
+}
+
+.footer__list {
+  display: flex;
+  margin: 16px 0;
+  list-style-type: none;
+  padding: 0;
+  gap: 10px;
+}
+
+.footer__list li a {
+  color: #fff;
+}
+
+@media screen and (max-width: 790px) {
+  .logo {
+    position: absolute;
+    left: 25%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+  }
+  .mention {
+    display: flex;
+    flex-direction: column;
+    min-height: 140px;
+    padding: 23px;
+    align-items: flex-start;
+    justify-self: flex-start;
+  }
+  .footer__title {
+    display: flex;
+    font-size: 20px;
+    padding: 10px;
+    position: absolute;
+    left: 4%;
+  }
+  .footer__list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 5px;
+    margin-top: 45px;
+  }
+}/*# sourceMappingURL=menu.css.map */
