@@ -41,6 +41,9 @@ header {
     align-items: center;
     justify-content: center;
   }
+  .restaurants__title {
+    position: inherit;
+  }
   .restaurant {
     height: 1110px;
     margin: 0;
@@ -230,6 +233,11 @@ header {
   text-align: center;
 }
 
+.restaurants__title {
+  position: relative;
+  left: 12vw;
+}
+
 .restaurant {
   background-color: rgba(153, 226, 208, 0.2039215686);
   justify-content: center;
@@ -366,6 +374,9 @@ header {
     width: 100%;
     align-items: center;
     justify-content: center;
+  }
+  .restaurants__title {
+    position: inherit;
   }
   .restaurant {
     height: 1110px;

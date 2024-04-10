@@ -26,6 +26,9 @@
     align-items: center;
     justify-content: center;
   }
+  .restaurants__title {
+    position: inherit;
+  }
   .restaurant {
     height: 1110px;
     margin: 0;
