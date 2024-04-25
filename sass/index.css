@@ -28,6 +28,9 @@ header {
   .loader {
     display: none;
   }
+  .choix{
+    width:100%;
+  }
   .explore__title {
     font-size: 34px;
   }
