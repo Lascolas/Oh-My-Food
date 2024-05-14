@@ -1,4 +1,4 @@
-@media screen and (max-width: 725px) {
+@media screen and (min-width: 725px) {
   body {
     margin: 0px;
   }
@@ -9,50 +9,182 @@
     text-overflow: ellipsis;
   }
 }
-@media screen and (max-width: 1100px) {
+@media screen and (min-width: 1100px) {
   .loader {
     display: none;
-  }
-  .explore__title {
-    font-size: 34px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
   .function {
-    margin: 4px;
+    display: flex;
+    height: 222px;
+    margin: auto;
+    width: 75%;
+    padding-bottom: 0px;
+  }
+  .function h2 {
+    display: flex;
+    transform: translate(7.3em, -3em);
   }
   .function__choise {
     display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
+    flex-direction: row;
+    width: 75vw;
+    gap: 50px;
+    margin: 80px 0px 50px 0px;
     justify-content: center;
+    cursor: default;
   }
-  .restaurants__title {
-    position: inherit;
+  .choix {
+    display: grid;
+    grid-template-columns: 1fr 1fr 5fr 1fr 1fr;
+    background-color: #f6f6f6;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
+    border-radius: 20px;
+    width: 322px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 72px;
+    cursor: default;
   }
-  .restaurant {
-    height: 1110px;
-    margin: 0;
-    padding: 20px;
+  .choix__number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    height: 24px;
+    width: 24px;
+    background-color: #9356dc;
+    border-radius: 50%;
+    transform: translate(-13px, 0px);
+    cursor: default;
+  }
+  .choix:hover :not(.choix__text, .choix__number) {
+    color: #9356DC;
   }
   .restaurant__cards {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    gap: 18px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 55px;
+    margin-left: 25px;
+    margin: auto;
+    justify-content: center;
   }
-  .restaurant__cards li {
-    width: 90.2vw;
+  .restaurant__cards .li {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
   }
   .cards {
-    width: 100%;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
   }
   .cards img {
-    width: 90.5vw;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 35.5vw;
+    height: 174px;
+    border-radius: 15px 15px 0px 0px;
+  }
+  .cards__text {
+    padding-left: 25px;
+  }
+  .cards__text--h3 {
+    margin: 0px;
+  }
+  .cards__text--p {
+    margin: 0px;
   }
   .cards__new {
-    left: 70%;
+    display: flex;
+    position: absolute;
+    left: 27vw;
+    height: 30px;
+    width: 80px;
+    margin: 15px 15px;
+    background-color: #99e2d0;
+    color: #008766;
+    border-radius: 2px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .restaurants__title {
+    position: relative;
+    left: 12vw;
+  }
+  .restaurant {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    background-color: rgba(153, 226, 208, 0.2039215686);
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+  }
+  .restaurant i {
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    left: 88%;
+    top: 80%;
+    font-size: 30px;
+    animation-delay: 2s;
+  }
+  .restaurant i:hover {
+    font-weight: bold;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to top, #9356DC, #ff79da);
+  }
+  .restaurant i:active {
+    font-weight: bold;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to top, #9356DC, #ff79da);
+  }
+  .location {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #eaeaea;
+    font-weight: 500;
+  }
+  .explore {
+    text-align: center;
+    background-color: #F6F6F6;
+    height: 240px;
+  }
+  .explore__title {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 0px;
+  }
+  .explore__text {
+    font-size: 18px;
+  }
+  .explore__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 218px;
+    height: 50px;
+    border-radius: 25px;
+    text-decoration: none;
+    margin: auto;
+    background: linear-gradient(to top, #9356dc, #ff79da);
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  }
+  .explore__button--text {
+    color: white;
+    font-weight: normal;
   }
 }
 body {

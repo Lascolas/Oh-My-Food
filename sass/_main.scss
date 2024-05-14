@@ -2,22 +2,30 @@
  @import "_responsive.scss";
 
 
-
  .location{
   display:flex ;
   flex-direction: row;
   @include center;
   background-color: #eaeaea;
   font-weight: 500;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+ 
+}
+.loader{
+  display: none;
+  
 }
 
 .explore{
   text-align: center;
   background-color: #F6F6F6;
   height: 240px;
+  margin-bottom: 30px;
+  padding:30px  0px;
 }
 .explore__title{
-  font-size: 40px;
+  width: 275;
+  font-size: 24px;
   font-weight: bold;
   margin-top: 0px;
 }
@@ -40,23 +48,30 @@
   font-weight: normal;
 }
 .function{
-  margin: auto;
+  margin: 15px;
   width: 75%;
+  @include center;
+  padding-bottom: 60px;
 }
 .function h2 {
-  display: grid;
-  padding: 50px 0px 15px 40px;
-  grid-template-columns: 50fr ;
-  
+ align-items: start;
+ text-align: left;
 }
 
 .function__choise {
   display: flex;
+  flex-direction: column;
   width: 100%;
-  gap: 50px;
-  margin: 25px 0px 50px 0px ;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
   justify-content: center;
   cursor: default;
+  
+
+  .fa-store{
+    color: #9356dc;
+  }
 }
 .choix{
   display: grid;
@@ -64,11 +79,29 @@
   background-color: #f6f6f6;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
   border-radius: 20px;
-  width: 322px;
+  width: 335px;
   @include center;
   height: 72px;
   cursor: default;  
+
+  .choix__text{
+    font-size: 16px;
+    font-weight: 600;
+  }
 }
+.cards__new{
+  display: flex;
+  position: absolute;
+  height: 30px;
+  width: 80px;
+  margin: 15px 15px;
+  background-color: #99e2d0;
+  color: #008766;
+  border-radius: 2px;
+  @include center;
+  transform: translate(10vw, 0px);
+  
+  }
 
 .choix__number {
   display: flex;
@@ -82,101 +115,79 @@
     cursor: default;
     
 }
-.choix:hover :not(.choix__text , .choix__number) {
-  color:#9356DC ;
-}
+
 .restaurant{
-height: 608px;
-padding-left: 50px;
-
-
+ display: flex;
+ flex-direction: column;
+ height: 1150px;
+ padding-left: 0px;
+ background-color: #99e2d034;
+ h2{
+  padding-left: 20px;
+ }
+ 
+ .restaurant__cards{
+  display: flex;
+  flex-direction: column;
+  width: 75.5vw;
+  height: 240px;
+  padding: 10px;
+  gap: 20px; 
+ }
+ img {
+  display: flex;
+  width: 91vw;
+  height: 174px;
+  object-fit: cover;
+  border-radius: 10px  10px 0px 0px;
 }
-.restaurant__cards{
-  display:grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 55px;
-  max-width: 35.5vw;
-  margin-left: 25px;
-  margin: auto;
-  justify-content: center;
-   
-}
-.cards{
-display: flex;
-position: relative;
-flex-wrap: wrap;
-padding-bottom: 10px;
-
-}
-.cards img {
-object-fit: cover;
-width: 35.5vw;
-height: 174px;
-border-radius: 15px 15px 0px 0px;
-}
-.cards__text{
-padding-left: 25px;
-}
-.cards__text--h3{
-margin: 0px;
-
-}
-.cards__text--p {
-margin: 0px;
+.cards {
+  gap: 30px;
+  
 }
 .restaurant__cards li {
-display: flex;
-width: 35.5vw;
-height: 240px;
-list-style-type: none;
-background-color: white;
-border-radius: 15px;
-}
-.cards__new{
   display: flex;
-position: absolute;
-left: 75%;
-height: 30px;
-width: 80px;
-margin: 15px 15px;
-background-color: #99e2d0;
-color: #008766;
-border-radius: 2px;
-@include center;
-
-}
-.restaurants__title{
- position: relative;
- left: 12vw;
-}
-.restaurant{
-background-color: #99e2d034;
-justify-content:  center ;
-margin: auto;  
-align-items: center ; 
-}
-.restaurant i {
-  display: flex;
-  justify-content: end;
-  position: absolute;
-  left: 88%;
-  top: 80%;
-  font-size: 30px; 
-
-  &:hover{
-    font-weight: bold; 
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-image: linear-gradient(to top, #9356DC ,#ff79da);
+  width: 91vw;
+  min-height: 240px;
+  list-style-type: none;
+  background-color: white;
+  border-radius: 15px;
   }
-  &:active{
+  .cards__text{
+    padding-left: 10px;
 
-    font-weight: bold; 
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-image: linear-gradient(to top, #9356DC ,#ff79da);
+   
 
-  }
+    }
+    .cards__text--h3{
+    margin: 0px;
+    
+    }
+    .cards__text--p {
+    margin: 0px;
+    }
+    i{
+      display: flex;
+      justify-content: end;
+      transform: translate(-42px, 189px);
+      font-size: 30px; 
+      transition: color 3s, background-color 3s;
+      height: 28px;
+      
+      &:hover{ 
+        font-weight: bold; 
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        background-image: linear-gradient(to top, #9356DC ,#ff79da);
+    }
+      &:focus{
+    
+        font-weight: bold; 
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        background-image: linear-gradient(to top, #9356DC ,#ff79da);
+    
+      }
+    }
+    
 }
-
-

@@ -1,7 +1,4 @@
 
-@mixin footer{
-   
-}
 @mixin center {
     justify-content: center;
     align-items: center;
@@ -62,7 +59,7 @@
         }
         100%{
             opacity: 0;
-            display: none;
+            
         }
         
     }

@@ -120,7 +120,6 @@ h2{
 }
 .plateandprice3{
     @extend .plateandprice1;
-    
 }
 .plate{
     display: flex;
@@ -202,8 +201,7 @@ h2{
 &:hover{
 .plate__option{
     transition-duration: 0.5s;
-    
-   right: 0px;    
+    right: 0px;    
 }
 
 }
