@@ -59,8 +59,33 @@
         }
         100%{
             opacity: 0;
+            display: none;
             
         }
         
     }
+}
+@mixin fade {
+    
+        @keyframes heart {
+            0% {
+                font-weight: bold; 
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+                background-image: linear-gradient(to top, #9356DC ,#ff79da);
+                opacity:0;
+                
+            
+            
+            
+            }
+            100% {
+                font-weight: bold; 
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+                background-image: linear-gradient(to top, #9356DC ,#ff79da);
+                opacity: 1;
+            
+            }
+          }
 }

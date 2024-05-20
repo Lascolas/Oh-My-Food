@@ -89,9 +89,14 @@
     font-weight: 600;
   }
 }
+.position__new{
+  top: 10vw;
+}
 .cards__new{
   display: flex;
   position: absolute;
+  left: 68%;
+  top: 0%;
   height: 30px;
   width: 80px;
   margin: 15px 15px;
@@ -99,9 +104,10 @@
   color: #008766;
   border-radius: 2px;
   @include center;
-  transform: translate(10vw, 0px);
+  z-index: 10;
   
   }
+  
 
 .choix__number {
   display: flex;
@@ -126,11 +132,11 @@
   padding-left: 20px;
  }
  
+ 
  .restaurant__cards{
-  display: flex;
   flex-direction: column;
   width: 75.5vw;
-  height: 240px;
+  max-width: 511px;
   padding: 10px;
   gap: 20px; 
  }
@@ -143,11 +149,13 @@
 }
 .cards {
   gap: 30px;
+  position: relative;
   
 }
 .restaurant__cards li {
   display: flex;
   width: 91vw;
+  max-width: 511px;
   min-height: 240px;
   list-style-type: none;
   background-color: white;
@@ -166,26 +174,25 @@
     .cards__text--p {
     margin: 0px;
     }
-    i{
+    i {
       display: flex;
       justify-content: end;
-      transform: translate(-42px, 189px);
+      transform: translate(-2em, 6.2em);
       font-size: 30px; 
-      transition: color 3s, background-color 3s;
+      font-weight: lighter;
       height: 28px;
+      background-size: cover;
+      
+      
       
       &:hover{ 
-        font-weight: bold; 
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
-        background-image: linear-gradient(to top, #9356DC ,#ff79da);
+        @include fade;
+        animation: heart 0.5s forwards;
     }
       &:focus{
     
-        font-weight: bold; 
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
-        background-image: linear-gradient(to top, #9356DC ,#ff79da);
+       animation: heart 0.5s forwards;
+        
     
       }
     }
