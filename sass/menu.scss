@@ -7,6 +7,7 @@ body{
 header{
     display: grid;
     grid-template-columns: 2fr 2.5fr;
+    padding-left: 20 px;
     height: 96px;
     align-items: center;
 }
@@ -52,10 +53,7 @@ header{
     height: 383px;
    
 }
-p {
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
+
 h3 {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -80,7 +78,7 @@ h3 {
 .menu{
     
     max-width: 634px;
-    margin: auto;
+    margin: 9px;
 }
 .menu__title {
     font-family: "Shrikhand", serif;
@@ -90,7 +88,7 @@ h3 {
 }
 h2{
    font-size:16px;
-   font-weight: lighter;
+   font-weight: 300;
    margin: 40px 0px 5px 0px;
 }
 .lign__bottom {
@@ -100,6 +98,7 @@ h2{
 .plateandprice1{    
     display: flex;
     flex-direction: row;
+    width: 349px;
     height: 69px;
     padding: 0px;
     margin: auto;
@@ -124,26 +123,26 @@ h2{
 .plate{
     display: flex;
     flex-direction: column;
-    width: 100%;
-    margin-left: 15px;
-    overflow: hidden;
+    width: 287px;
+    margin-left: 0px;
     white-space: nowrap;
-    text-overflow: ellipsis;
+    
 }
 .platetitle{
     margin: 0px 15px 5px;
     font-size: 18px;
-    font-weight: 500;
-    width: 39vw;
+    font-weight: bold;
+    width: 100%;
     text-overflow: ellipsis;
 }
 .platetxt{
     margin: 0px 15px;
-    font-weight: 100px;
+    
     text-overflow: ellipsis;
+    font-size: 15px;
 }
 .plate__option{
-    width: 152px;
+    width: 64px;
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -151,26 +150,31 @@ h2{
     background-color: #99e2d0;
     border-radius: 0px 15px 15px 0px;
     position: relative;
-    right: -65px;
-    transition-duration: 0.5s;  
+    right: -23px;
+    transition-duration: 0.5s; 
 }
 .fa-heart {
-     font-size: 25px;
-  
-    &:hover{
-      font-weight: bold; 
-      -webkit-text-fill-color: transparent;
-      -webkit-background-clip: text;
-      background-image: linear-gradient(to top, #9356DC ,#ff79da);
-    }
-    &:active{
-  
-      font-weight: bold; 
-      -webkit-text-fill-color: transparent;
-      -webkit-background-clip: text;
-      background-image: linear-gradient(to top, #9356DC ,#ff79da);
-  
-    }
+    
+        display: flex;
+        justify-content: end;
+        font-size: 30px; 
+        font-weight: lighter;
+        height: 28px;
+        background-size: cover;
+        
+        
+        
+        &:hover{ 
+          @include fade;
+          animation: heart 0.5s forwards;
+      }
+        &:focus{
+      
+         animation: heart 0.5s forwards;
+          
+      
+        }
+      
   }
 .plate__price{
     background-color: white;
@@ -180,6 +184,7 @@ h2{
     width: 58px;
     height: 69px;
     margin: 0px;
+    font-weight: bold;
     
 }
 .plate__check{
@@ -217,6 +222,10 @@ h2{
   margin-top: 60px;
   background: linear-gradient(to top, #9356dc, #ff79da);
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+
+  &:hover{
+    opacity: 0.8;
+  }
 }
 .button__text{
     color: white;
