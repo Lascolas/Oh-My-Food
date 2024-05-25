@@ -6,17 +6,28 @@
     
     
     .plateandprice1 ,.plateandprice2 ,.plateandprice3{
-        max-width: 345px;   
+           
+        width: 634px; 
+        &:hover{
+          .plate__option{
+              transition-duration: 0.5s;
+              right: 0px;   
+              left: 73px; 
+          }}
     }
-    .platetitle .platetxt{
-        text-overflow: ellipsis;
+    .menu{
+      padding-left: 220px;
     }
+    
+    .plate__option {
+      left: 146px;
+     
     
 }
 
 @media  screen and (min-width:1100px){
     .loader{
-        
+        z-index: 100;
         width: 100%;
         @include center;
       }
@@ -31,7 +42,25 @@
         display: flex; 
         transform: translate(7.3em, -3em);    
       }
+      .plate {
+        display: flex;
+        flex-direction: column;
+        width: 439px;
+        margin-left: 0px;
+        white-space: nowrap;
+      }
       
+    }
+    .plate__price {
+      background-color: white;
+      font-size: 0.94rem;
+      padding-top: 40px;
+      padding-left: 5px;
+      width: 35px;
+      height: 69px;
+      margin: 0px;
+      font-weight: bold;
+  }
       .function__choise {
         display: flex;
         flex-direction: row;
