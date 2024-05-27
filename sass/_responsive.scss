@@ -5,16 +5,7 @@
     }
     
     
-    .plateandprice1 ,.plateandprice2 ,.plateandprice3{
-           
-        width: 634px; 
-        &:hover{
-          .plate__option{
-              transition-duration: 0.5s;
-              right: 0px;   
-              left: 73px; 
-          }}
-    }
+    
     .menu{
       padding-left: 220px;
     }
@@ -31,6 +22,16 @@
         width: 100%;
         @include center;
       }
+      .plateandprice1 ,.plateandprice2 ,.plateandprice3{
+           
+        width: 634px; 
+        &:hover{
+          .plate__option{
+              transition-duration: 0.5s;
+              right: 0px;   
+              left: 73px; 
+          }}
+    }
     .function{
       display: flex;
      height: 222px;

@@ -2,6 +2,8 @@
  @import "_responsive.scss";
  @import "_footer.scss";
 
+ .loader{
+  display: none;}
 
  .location{
   display:flex ;
@@ -140,7 +142,7 @@
   width: 75.5vw;
   max-width: 511px;
   padding: 10px;
-  gap: 20px; 
+  gap: 40px; 
  }
  img {
   display: flex;

@@ -2,14 +2,6 @@
   body {
     margin: 0px;
   }
-  .plateandprice1, .plateandprice3, .plateandprice2 {
-    width: 634px;
-  }
-  .plateandprice1:hover .plate__option, .plateandprice2:hover .plate__option, .plateandprice3:hover .plate__option {
-    transition-duration: 0.5s;
-    right: 0px;
-    left: 73px;
-  }
   .menu {
     padding-left: 220px;
   }
@@ -24,6 +16,14 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+  }
+  .plateandprice1, .plateandprice3, .plateandprice2 {
+    width: 634px;
+  }
+  .plateandprice1:hover .plate__option, .plateandprice2:hover .plate__option, .plateandprice3:hover .plate__option {
+    transition-duration: 0.5s;
+    right: 0px;
+    left: 73px;
   }
   .function {
     display: flex;
@@ -196,6 +196,7 @@
 body {
   display: block;
   font-family: "Roboto", sans-serif;
+  margin: 0px;
 }
 
 header {

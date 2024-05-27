@@ -17,14 +17,6 @@ header {
   body {
     margin: 0px;
   }
-  .plateandprice1, .plateandprice2, .plateandprice3 {
-    width: 634px;
-  }
-  .plateandprice1:hover .plate__option, .plateandprice2:hover .plate__option, .plateandprice3:hover .plate__option {
-    transition-duration: 0.5s;
-    right: 0px;
-    left: 73px;
-  }
   .menu {
     padding-left: 220px;
   }
@@ -39,6 +31,14 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
+  }
+  .plateandprice1, .plateandprice2, .plateandprice3 {
+    width: 634px;
+  }
+  .plateandprice1:hover .plate__option, .plateandprice2:hover .plate__option, .plateandprice3:hover .plate__option {
+    transition-duration: 0.5s;
+    right: 0px;
+    left: 73px;
   }
   .function {
     display: flex;
@@ -273,6 +273,10 @@ header {
     position: relative;
   }
 }
+.loader {
+  display: none;
+}
+
 .location {
   display: flex;
   flex-direction: row;
@@ -421,7 +425,7 @@ header {
   width: 75.5vw;
   max-width: 511px;
   padding: 10px;
-  gap: 20px;
+  gap: 40px;
 }
 .restaurant img {
   display: flex;
@@ -562,14 +566,6 @@ header {
   body {
     margin: 0px;
   }
-  .plateandprice1, .plateandprice2, .plateandprice3 {
-    width: 634px;
-  }
-  .plateandprice1:hover .plate__option, .plateandprice2:hover .plate__option, .plateandprice3:hover .plate__option {
-    transition-duration: 0.5s;
-    right: 0px;
-    left: 73px;
-  }
   .menu {
     padding-left: 220px;
   }
@@ -584,6 +580,14 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
+  }
+  .plateandprice1, .plateandprice2, .plateandprice3 {
+    width: 634px;
+  }
+  .plateandprice1:hover .plate__option, .plateandprice2:hover .plate__option, .plateandprice3:hover .plate__option {
+    transition-duration: 0.5s;
+    right: 0px;
+    left: 73px;
   }
   .function {
     display: flex;
