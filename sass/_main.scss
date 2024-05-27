@@ -16,6 +16,8 @@
 }
 
 
+
+
 .explore{
   text-align: center;
   background-color: #F6F6F6;
@@ -132,6 +134,7 @@
  height: 1150px;
  padding-left: 0px;
  background-color: #99e2d034;
+ 
  h2{
   padding-left: 20px;
  }
@@ -162,11 +165,14 @@
   max-width: 511px;
   min-height: 240px;
   list-style-type: none;
-  background-color: white;
+  
   border-radius: 15px;
   }
   .cards__text{
     padding-left: 10px;
+    background-color: white;
+    height: 54px;
+    border-radius: 0px 0px 15px 15px
 
    
 
@@ -189,16 +195,11 @@
       
       
       
-      &:hover{ 
+      &:hover , :checked { 
         @include fade;
         animation: heart 0.5s forwards;
     }
-      &:focus{
     
-       animation: heart 0.5s forwards;
-        
-    
-      }
     }
     
 }

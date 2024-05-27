@@ -446,11 +446,13 @@ header {
   max-width: 511px;
   min-height: 240px;
   list-style-type: none;
-  background-color: white;
   border-radius: 15px;
 }
 .restaurant .cards__text {
   padding-left: 10px;
+  background-color: white;
+  height: 54px;
+  border-radius: 0px 0px 15px 15px;
 }
 .restaurant .cards__text--h3 {
   margin: 0px;
@@ -467,7 +469,7 @@ header {
   height: 28px;
   background-size: cover;
 }
-.restaurant i:hover {
+.restaurant i:hover, .restaurant i :checked {
   animation: heart 0.5s forwards;
 }
 @keyframes heart {
@@ -485,9 +487,6 @@ header {
     background-image: linear-gradient(to top, #9356DC, #ff79da);
     opacity: 1;
   }
-}
-.restaurant i:focus {
-  animation: heart 0.5s forwards;
 }
 
 @media screen and (min-width: 1100px) {
