@@ -20,6 +20,7 @@
     .loader{
         z-index: 100;
         width: 100%;
+        height: 1506px;
         @include center;
       }
       .plateandprice1 ,.plateandprice2 ,.plateandprice3{
@@ -31,10 +32,10 @@
               right: 0px;   
               left: 73px; 
           }}
-    }
+        }
     .function{
       display: flex;
-     height: 222px;
+      height: 222px;
       margin: auto;
       width: 75%;
       padding-bottom: 0px;
@@ -98,7 +99,6 @@
       
     .restaurant__cards{
         display: grid;
-        
         grid-template-columns: 1fr 2fr;
         gap: 55px;
         margin-left: 25px;
