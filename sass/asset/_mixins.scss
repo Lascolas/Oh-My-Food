@@ -1,0 +1,113 @@
+
+@mixin center {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@mixin wave {
+    animation: wave ease-in-out 1.5;
+    @keyframes wave {
+        0% {
+            transform: translateX(-40%);
+        }
+        20% {
+            transform: translateX(10%);
+        }
+        40% {
+            transform: translateX(-10%);
+        }
+        60% {
+            transform: translateX(5%);
+        }
+        80% {
+            transform: translateX(-2%);
+        }
+        100% {
+            transform: translateX(0%);
+        }
+    }   
+}
+@mixin flash {
+    animation: flash 1.2s linear infinite;
+    @keyframes flash {
+        0% {
+            color: #9356dc;
+            text-shadow: 0px 0px 7px #9356dc;
+        }
+        90%{
+            color: black;
+            text-shadow: 0px 0px 7px black;
+        }
+        100%{
+            color: #9356dc;
+            text-shadow: 0px 0px 7px #9356dc;
+            display: none;
+
+        }
+
+    }
+}
+@mixin loader {
+    animation: loader 2s forwards;
+    @keyframes loader  {
+        0%{
+            opacity: 1;;
+        }
+        99%{
+            opacity: 1;
+        }
+        100%{
+            opacity: 0;
+            display: none;
+            
+        }
+        
+    }
+}
+@mixin fade {
+    
+        @keyframes heart {
+            0% {
+                font-weight: bold; 
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+                background-image: linear-gradient(to top, #9356DC ,#ff79da);
+                opacity:0.2;
+                
+            
+            
+            
+            }
+            100% {
+                font-weight: bold; 
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+                background-image: linear-gradient(to top, #9356DC ,#ff79da);
+                opacity: 1;
+            
+            }
+          }
+          @keyframes heartReverse{
+            100%  {
+                
+                font-weight: bold; 
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+                background-image: linear-gradient(to top, #9356DC ,#ff79da);
+                opacity:1;
+                
+            
+            
+            
+            }
+            0% {
+                font-weight: bold; 
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+                background-image: linear-gradient(to top, #9356DC ,#ff79da);
+                opacity:0.2 ;
+            
+            }
+          }
+}

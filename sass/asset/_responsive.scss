@@ -1,0 +1,221 @@
+
+@media  screen and (min-width:1100px){
+    .loader{
+        z-index: 100;
+        width: 100%;
+        height: 1506px;
+        @include center;
+      }
+      .plateandprice1 ,.plateandprice2 ,.plateandprice3{
+           
+        width: 100%;
+        transition: 300ms;
+
+        &:hover{
+          .plate__option{
+            
+          
+            transition-duration: 0.5s;
+            transform: translate(30% ,0px);
+  
+      
+          }
+        }
+        }
+          
+        .plate__option{
+           
+            transition:  0.5s ;
+            box-sizing: content-box;
+          
+        
+        .plate__check{
+          left: 45%;
+        }}
+        
+    .function{
+      display: flex;
+      height: 222px;
+      margin: auto;
+      width: 100%;
+      padding-bottom: 0px;
+    
+      
+    }
+      .function h2 {
+        display: flex;
+        transform: translate(-26rem, -3em);
+        position: absolute; 
+      }
+      .plate {
+        display: flex;
+        flex-direction: column;
+        width: 439px;
+        margin-left: 0px;
+        white-space: nowrap;
+     }
+      .menu{
+        margin-left : auto;
+      }
+    
+    .plate__price {
+      display: block;
+      background-color: white;
+      font-size: 0.94rem;
+      padding-top: 40px;
+      padding-left: 5px;
+      width: 9vw;
+      height: 69px;
+      margin: 0px;
+      font-weight: bold;
+      
+  }
+      .function__choise {
+        display: flex;
+        flex-direction: row;
+        width: 69vw;
+        gap: 40px;
+        margin: 77px 31px 45px;
+        justify-content: center;
+        cursor: default;
+        padding-left: 50px;
+    }
+      
+      .choix{
+        display: grid;
+        grid-template-columns: 1fr  1fr 5fr 1fr 1fr;
+        background-color: #f6f6f6;
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
+        border-radius: 20px;
+        width: 322px;
+        @include center;
+        height: 72px;
+        cursor: default;  
+      }
+      
+      .choix__number {
+        display: flex;
+          @include center;
+          color: white;
+          height: 24px;
+          width: 24px;
+          background-color: #9356dc;
+          border-radius: 50%;
+          transform:translate(-13px , 0px) ; 
+          cursor: default;
+          
+      }
+      
+    .restaurant__cards{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 55px;
+        margin-left: 25px;
+        align-items: center;
+        justify-content: center;
+
+        .cards__new{
+          left: 25em;
+          top: 0em;
+          
+      }
+      .cards{
+      flex-direction: column;
+      position: relative;
+      flex-wrap: wrap;
+      padding-bottom: 10px;
+      
+      }
+      .cards img {
+      object-fit: cover;
+      width: 100%;
+      height: 174px;
+      border-radius: 15px 15px 0px 0px;
+      }
+      .cards__text{
+      padding-left: 25px;
+      padding-top:10px ;
+      }
+      .cards__text--h3{
+      margin: 0px;
+      
+      }
+      .cards__text--p {
+      margin: 0px;
+      }
+      
+      
+      }
+      .restaurant h2{
+        display:flex ;
+        position: relative;
+        transform: translate(-10.5em, 0em);
+      }
+      .restaurant {
+        display: grid;
+      background-color: #b7f1e334;
+      justify-content:  center ;
+      margin: auto;  
+      align-items: center ; 
+      height: 668px;
+      }
+      img {
+        width: 100%;
+      }
+      .restaurant i {
+        display: flex;
+        justify-content: end;
+        position: absolute;
+        transform: translate(15em, 6.2em);
+      
+        font-size: 30px; 
+        
+        
+      }
+      .location{
+        display:flex ;
+        flex-direction: row;
+        @include center;
+        background-color: #eaeaea;
+        font-weight: 500;
+      }
+      
+      .explore{
+        text-align: center;
+        background-color: #F6F6F6;
+        height: 240px;
+        padding-top: 30px;
+        margin: 0px;
+      }
+      .explore__title{
+        font-size: 40px;
+        font-weight: bold;
+        margin-top: 0px;
+      }
+      .explore__text{
+        font-size: 18px;
+      }
+      .explore__button{
+        display: flex;
+        @include center ;
+        width: 218px;
+        height: 50px;
+        border-radius: 25px;
+        text-decoration: none;
+        margin: auto;
+        background: linear-gradient(to top, #9356dc, #ff79da);
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+      }
+      .explore__button--text{
+        color: white;
+        font-weight: normal;
+      }
+      .restaurant__cards li {
+        display: flex;
+        flex-direction:column ;
+      }
+    }
+      
+      
+    
+          

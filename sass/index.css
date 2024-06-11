@@ -13,18 +13,7 @@ header {
   padding: 0px 19px;
 }
 
-@media screen and (min-width: 725px) {
-  body {
-    margin: 0px;
-  }
-  .menu {
-    padding-left: 220px;
-  }
-  .plate__option {
-    left: 146px;
-  }
-}
-@media screen and (min-width: 725px) and (min-width: 1100px) {
+@media screen and (min-width: 1100px) {
   .loader {
     z-index: 100;
     width: 100%;
@@ -34,23 +23,31 @@ header {
     text-align: center;
   }
   .plateandprice1, .plateandprice2, .plateandprice3 {
-    width: 634px;
+    width: 100%;
+    transition: 300ms;
   }
   .plateandprice1:hover .plate__option, .plateandprice2:hover .plate__option, .plateandprice3:hover .plate__option {
     transition-duration: 0.5s;
-    right: 0px;
-    left: 73px;
+    transform: translate(30%, 0px);
+  }
+  .plate__option {
+    transition: 0.5s;
+    box-sizing: content-box;
+  }
+  .plate__option .plate__check {
+    left: 45%;
   }
   .function {
     display: flex;
     height: 222px;
     margin: auto;
-    width: 75%;
+    width: 100%;
     padding-bottom: 0px;
   }
   .function h2 {
     display: flex;
-    transform: translate(7.3em, -3em);
+    transform: translate(-26rem, -3em);
+    position: absolute;
   }
   .plate {
     display: flex;
@@ -59,14 +56,16 @@ header {
     margin-left: 0px;
     white-space: nowrap;
   }
-}
-@media screen and (min-width: 725px) {
+  .menu {
+    margin-left: auto;
+  }
   .plate__price {
+    display: block;
     background-color: white;
     font-size: 0.94rem;
     padding-top: 40px;
     padding-left: 5px;
-    width: 35px;
+    width: 9vw;
     height: 69px;
     margin: 0px;
     font-weight: bold;
@@ -74,11 +73,12 @@ header {
   .function__choise {
     display: flex;
     flex-direction: row;
-    width: 75vw;
-    gap: 50px;
-    margin: 80px 0px 50px 0px;
+    width: 69vw;
+    gap: 40px;
+    margin: 77px 31px 45px;
     justify-content: center;
     cursor: default;
+    padding-left: 50px;
   }
   .choix {
     display: grid;
@@ -144,14 +144,15 @@ header {
   .restaurant h2 {
     display: flex;
     position: relative;
-    right: 32vw;
+    transform: translate(-10.5em, 0em);
   }
   .restaurant {
-    background-color: rgba(153, 226, 208, 0.2039215686);
+    display: grid;
+    background-color: rgba(183, 241, 227, 0.2039215686);
     justify-content: center;
     margin: auto;
     align-items: center;
-    height: 608px;
+    height: 668px;
   }
   img {
     width: 100%;
@@ -261,17 +262,18 @@ header {
   }
   .footer__list {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     margin: 16px 0;
     list-style-type: none;
     padding: 0;
-    gap: 10px;
+    gap: 15px;
   }
   .footer__list li a {
     color: #fff;
   }
   .footer__title {
     position: relative;
+    left: 1%;
   }
 }
 .loader {
@@ -323,6 +325,7 @@ header {
 }
 .explore__button:hover {
   opacity: 0.8;
+  box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.55);
 }
 
 .explore__button--text {
@@ -331,8 +334,8 @@ header {
 }
 
 .function {
-  margin: 15px;
-  width: 75%;
+  margin: 20px;
+  width: 95%;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -364,12 +367,11 @@ header {
   background-color: #f6f6f6;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
   border-radius: 20px;
-  width: 335px;
+  width: 100%;
   justify-content: center;
   align-items: center;
   text-align: center;
   height: 72px;
-  cursor: default;
 }
 .choix .choix__text {
   font-size: 16px;
@@ -412,7 +414,6 @@ header {
 }
 
 .restaurant {
-  display: flex;
   flex-direction: column;
   height: 1150px;
   padding-left: 0px;
@@ -425,7 +426,7 @@ header {
   flex-direction: column;
   width: 75.5vw;
   max-width: 511px;
-  padding: 10px;
+  padding: 15px;
   gap: 40px;
 }
 .restaurant img {
@@ -439,6 +440,7 @@ header {
 .restaurant .cards {
   gap: 30px;
   position: relative;
+  padding-bottom: 30px;
 }
 .restaurant .restaurant__cards li {
   display: flex;
@@ -468,8 +470,9 @@ header {
   font-weight: lighter;
   height: 28px;
   background-size: cover;
+  transition: all 300ms;
 }
-.restaurant i:hover, .restaurant i :checked {
+.restaurant i:hover {
   animation: heart 0.5s forwards;
 }
 @keyframes heart {
@@ -478,7 +481,7 @@ header {
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-image: linear-gradient(to top, #9356DC, #ff79da);
-    opacity: 0;
+    opacity: 0.2;
   }
   100% {
     font-weight: bold;
@@ -487,6 +490,25 @@ header {
     background-image: linear-gradient(to top, #9356DC, #ff79da);
     opacity: 1;
   }
+}
+@keyframes heartReverse {
+  100% {
+    font-weight: bold;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to top, #9356DC, #ff79da);
+    opacity: 1;
+  }
+  0% {
+    font-weight: bold;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to top, #9356DC, #ff79da);
+    opacity: 0.2;
+  }
+}
+.restaurant i:not(:hover) {
+  animation: heartReverse 0.5s ease-in;
 }
 
 @media screen and (min-width: 1100px) {
@@ -562,18 +584,7 @@ header {
     animation-delay: 0.8S;
   }
 }
-@media screen and (min-width: 725px) {
-  body {
-    margin: 0px;
-  }
-  .menu {
-    padding-left: 220px;
-  }
-  .plate__option {
-    left: 146px;
-  }
-}
-@media screen and (min-width: 725px) and (min-width: 1100px) {
+@media screen and (min-width: 1100px) {
   .loader {
     z-index: 100;
     width: 100%;
@@ -583,23 +594,31 @@ header {
     text-align: center;
   }
   .plateandprice1, .plateandprice2, .plateandprice3 {
-    width: 634px;
+    width: 100%;
+    transition: 300ms;
   }
   .plateandprice1:hover .plate__option, .plateandprice2:hover .plate__option, .plateandprice3:hover .plate__option {
     transition-duration: 0.5s;
-    right: 0px;
-    left: 73px;
+    transform: translate(30%, 0px);
+  }
+  .plate__option {
+    transition: 0.5s;
+    box-sizing: content-box;
+  }
+  .plate__option .plate__check {
+    left: 45%;
   }
   .function {
     display: flex;
     height: 222px;
     margin: auto;
-    width: 75%;
+    width: 100%;
     padding-bottom: 0px;
   }
   .function h2 {
     display: flex;
-    transform: translate(7.3em, -3em);
+    transform: translate(-26rem, -3em);
+    position: absolute;
   }
   .plate {
     display: flex;
@@ -608,14 +627,16 @@ header {
     margin-left: 0px;
     white-space: nowrap;
   }
-}
-@media screen and (min-width: 725px) {
+  .menu {
+    margin-left: auto;
+  }
   .plate__price {
+    display: block;
     background-color: white;
     font-size: 0.94rem;
     padding-top: 40px;
     padding-left: 5px;
-    width: 35px;
+    width: 9vw;
     height: 69px;
     margin: 0px;
     font-weight: bold;
@@ -623,11 +644,12 @@ header {
   .function__choise {
     display: flex;
     flex-direction: row;
-    width: 75vw;
-    gap: 50px;
-    margin: 80px 0px 50px 0px;
+    width: 69vw;
+    gap: 40px;
+    margin: 77px 31px 45px;
     justify-content: center;
     cursor: default;
+    padding-left: 50px;
   }
   .choix {
     display: grid;
@@ -693,14 +715,15 @@ header {
   .restaurant h2 {
     display: flex;
     position: relative;
-    right: 32vw;
+    transform: translate(-10.5em, 0em);
   }
   .restaurant {
-    background-color: rgba(153, 226, 208, 0.2039215686);
+    display: grid;
+    background-color: rgba(183, 241, 227, 0.2039215686);
     justify-content: center;
     margin: auto;
     align-items: center;
-    height: 608px;
+    height: 668px;
   }
   img {
     width: 100%;
@@ -810,17 +833,18 @@ header {
   }
   .footer__list {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     margin: 16px 0;
     list-style-type: none;
     padding: 0;
-    gap: 10px;
+    gap: 15px;
   }
   .footer__list li a {
     color: #fff;
   }
   .footer__title {
     position: relative;
+    left: 1%;
   }
 }
 body {

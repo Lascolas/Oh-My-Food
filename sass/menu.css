@@ -1,15 +1,4 @@
-@media screen and (min-width: 725px) {
-  body {
-    margin: 0px;
-  }
-  .menu {
-    padding-left: 220px;
-  }
-  .plate__option {
-    left: 146px;
-  }
-}
-@media screen and (min-width: 725px) and (min-width: 1100px) {
+@media screen and (min-width: 1100px) {
   .loader {
     z-index: 100;
     width: 100%;
@@ -19,23 +8,31 @@
     text-align: center;
   }
   .plateandprice1, .plateandprice3, .plateandprice2 {
-    width: 634px;
+    width: 100%;
+    transition: 300ms;
   }
   .plateandprice1:hover .plate__option, .plateandprice2:hover .plate__option, .plateandprice3:hover .plate__option {
     transition-duration: 0.5s;
-    right: 0px;
-    left: 73px;
+    transform: translate(30%, 0px);
+  }
+  .plate__option {
+    transition: 0.5s;
+    box-sizing: content-box;
+  }
+  .plate__option .plate__check {
+    left: 45%;
   }
   .function {
     display: flex;
     height: 222px;
     margin: auto;
-    width: 75%;
+    width: 100%;
     padding-bottom: 0px;
   }
   .function h2 {
     display: flex;
-    transform: translate(7.3em, -3em);
+    transform: translate(-26rem, -3em);
+    position: absolute;
   }
   .plate {
     display: flex;
@@ -44,14 +41,16 @@
     margin-left: 0px;
     white-space: nowrap;
   }
-}
-@media screen and (min-width: 725px) {
+  .menu {
+    margin-left: auto;
+  }
   .plate__price {
+    display: block;
     background-color: white;
     font-size: 0.94rem;
     padding-top: 40px;
     padding-left: 5px;
-    width: 35px;
+    width: 9vw;
     height: 69px;
     margin: 0px;
     font-weight: bold;
@@ -59,11 +58,12 @@
   .function__choise {
     display: flex;
     flex-direction: row;
-    width: 75vw;
-    gap: 50px;
-    margin: 80px 0px 50px 0px;
+    width: 69vw;
+    gap: 40px;
+    margin: 77px 31px 45px;
     justify-content: center;
     cursor: default;
+    padding-left: 50px;
   }
   .choix {
     display: grid;
@@ -129,14 +129,15 @@
   .restaurant h2 {
     display: flex;
     position: relative;
-    right: 32vw;
+    transform: translate(-10.5em, 0em);
   }
   .restaurant {
-    background-color: rgba(153, 226, 208, 0.2039215686);
+    display: grid;
+    background-color: rgba(183, 241, 227, 0.2039215686);
     justify-content: center;
     margin: auto;
     align-items: center;
-    height: 608px;
+    height: 668px;
   }
   img {
     width: 100%;
@@ -198,6 +199,10 @@ body {
   display: block;
   font-family: "Roboto", sans-serif;
   margin: 0px;
+}
+
+a {
+  text-decoration: none;
 }
 
 header {
@@ -346,6 +351,9 @@ h2 {
     transform: translateX(0%);
   }
 }
+.plateandprice1:hover .plate__option, .plateandprice3:hover .plate__option, .plateandprice2:hover .plate__option {
+  left: 5%;
+}
 
 .plateandprice2 {
   animation: wave ease-in-out 1.5S 0.2s;
@@ -354,14 +362,14 @@ h2 {
 .plate {
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 60%;
   margin-left: 0px;
   white-space: nowrap;
 }
 
 .platetitle {
   margin: 0px 15px 5px;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: bold;
   width: 100%;
   text-overflow: ellipsis;
@@ -374,7 +382,7 @@ h2 {
 }
 
 .plate__option {
-  width: 120px;
+  width: 35%;
   height: 100%;
   display: flex;
   flex-direction: row;
@@ -382,7 +390,7 @@ h2 {
   background-color: #99e2d0;
   border-radius: 0px 15px 15px 0px;
   position: relative;
-  right: -63px;
+  left: 31%;
   transition-duration: 0.5s;
 }
 
@@ -403,7 +411,7 @@ h2 {
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-image: linear-gradient(to top, #9356DC, #ff79da);
-    opacity: 0;
+    opacity: 0.2;
   }
   100% {
     font-weight: bold;
@@ -413,8 +421,24 @@ h2 {
     opacity: 1;
   }
 }
-.fa-heart:focus {
-  animation: heart 0.5s forwards;
+@keyframes heartReverse {
+  100% {
+    font-weight: bold;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to top, #9356DC, #ff79da);
+    opacity: 1;
+  }
+  0% {
+    font-weight: bold;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to top, #9356DC, #ff79da);
+    opacity: 0.2;
+  }
+}
+.fa-heart:not(:hover) {
+  animation: heartReverse 300ms ease;
 }
 
 .plate__price {
@@ -423,6 +447,8 @@ h2 {
   padding-top: 40px;
   padding-left: 5px;
   width: 58px;
+  max-width: 100%;
+  max-height: 100%;
   height: 69px;
   margin: 0px;
   font-weight: bold;
@@ -430,6 +456,7 @@ h2 {
 
 .plate__check {
   background-color: white;
+  color: #99e2d0;
   border-radius: 50% 50% 50% 50%/50% 50% 50% 50%;
   width: 20px;
   height: 20px;
@@ -439,11 +466,6 @@ h2 {
   position: absolute;
   top: 24px;
   left: 70%;
-}
-
-.plateandprice1:hover .plate__option, .plateandprice2:hover .plate__option, .plateandprice3:hover .plate__option {
-  transition-duration: 0.5s;
-  right: 0px;
 }
 
 .button {
@@ -462,6 +484,7 @@ h2 {
 }
 .button:hover {
   opacity: 0.8;
+  box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.55);
 }
 
 .button__text {
